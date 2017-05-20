@@ -1,6 +1,10 @@
 # AngularRest
 
+This is my first angular2 projects. The goal is to create the front-end pattern for Single Page Application
+with SpringBoot Backend 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.0.4.
+
 
 ## Development server
 
