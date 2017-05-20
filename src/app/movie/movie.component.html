@@ -1,0 +1,20 @@
+<h2>Open Movie Database</h2>
+<div class="col-md-8 col-md-offset-2">
+  <div class="form-group">
+    <input type="text" required [(ngModel)]="id_movie" (change)="callMovieService()" class="form-control" placeholder="Enter Movie name ...">
+    <br><br>
+    <h3>Movie Details</h3>
+    <br>
+    <p class="well lead">
+      <i> Title :</i> {{ this.mv_Title }} <br>
+      <i> Plot :</i> {{ this.mv_Plot }} <br>
+      <i> Actors :</i> {{ this.mv_Actors }} <br>
+      <i> Directed by :</i> {{ this.mv_Director }} <br>
+      <i> Rated :</i> {{ this.mv_Rated }} <br>
+      <i> Release Date :</i> {{ this.mv_Released }} <br>
+    </p>
+    <p class="text-info">Total # of all the service requests including Weather, Movie, and Currency is :
+      <span class="badge">{{this._sharedService.totReqsMade}}</span>
+    </p>
+  </div>
+</div>

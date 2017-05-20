@@ -1,0 +1,13 @@
+<h2>Currency Exchange Rates</h2>
+<div class="col-md-8 col-md-offset-2">
+  <div class="form-group">
+    <input type="text" [(ngModel)]="id_currency" (change)="callCurrencyService()" class="form-control" placeholder="Enter Currency Symbol. Example: GBP(,AUD,INR)...">
+    <br><br>
+    <h3>Rate Details</h3>
+    <br>
+    <p class="well lead">Exchange rate relative to Euro in a JSON format: : {{ this.my_result }} </p>
+    <p class="text-info">Total # of all the service requests including Weather, Movie, and Currency is :
+      <span class="badge">{{this._sharedService.totReqsMade}}</span>
+    </p>
+  </div>
+</div>

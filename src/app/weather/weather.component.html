@@ -1,0 +1,18 @@
+<h2>Yahoo! Weather </h2>
+<div class="col-md-8 col-md-offset-2">
+  <div class="form-group">
+    <input type="text" [(ngModel)]="id_city" class="form-control" placeholder="Enter City name ..."><br>
+    <input type="text" [(ngModel)]="id_state" class="form-control" placeholder="Enter State. Example CA for California ..."><br>
+    <button type="button" class="btn btn-primary" (click)="callWeatherService()">Submit</button>
+    <br><br><br>
+    <br>
+    <p class="well lead">
+      <i>City, State, Country :</i> {{ this.op_city }} {{ this.op_region }} {{ this.op_country }} <br>
+      <i>Current Condition :</i> {{ this.op_text }} <br>
+      <i>Current Temperature :</i> {{ this.op_temp }} <br>
+    </p>
+    <p class="text-info">Total # of all the service requests including Weather, Movie, and Currency is :
+      <span class="badge">{{this._sharedService.totReqsMade}}</span>
+    </p>
+  </div>
+</div>
