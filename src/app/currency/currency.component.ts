@@ -9,6 +9,8 @@ import { SharedService } from "./../shared.service";
 export class CurrencyComponent implements OnInit {
 
   id_currency: string = "";
+
+
   my_result: any;
   constructor(private _sharedService: SharedService) {
   }

@@ -10,6 +10,7 @@ import { CurrencyComponent } from './currency/currency.component';
 import { MovieComponent } from './movie/movie.component';
 import { CONST_ROUTING } from './app.routing';
 import { SharedService } from "./shared.service";
+import { LoginComponent } from './login/login.component';
 
 
 @NgModule({
@@ -18,7 +19,9 @@ import { SharedService } from "./shared.service";
     MenuComponent,
     WeatherComponent,
     CurrencyComponent,
-    MovieComponent
+    MovieComponent,
+    LoginComponent
+
   ],
   imports: [
     BrowserModule,
